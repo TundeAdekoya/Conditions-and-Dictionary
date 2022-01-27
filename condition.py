@@ -4,16 +4,12 @@
 #     print("Incorrect")
 
 
-# user_data = {"Email":"Adekoya Tunde"}
-# choice = input("Enter details to py\n>")
-# if user_data.values() == user_data.values():
-#     print("Account Already Exist")
-
-# elif user_data.keys() != user_data.values():
-#     print("Do you want to Create Account?\n>")
-    
-# else :
-#     print("Account does not exist")
+user_data = {"adekoyatunde.com":"Adekoya Tunde"}
+choice = input("Enter email:\n>")
+if choice in user_data.keys():
+    print("Account Already Exist")    
+else :
+    print("Account does not exist")
 
 
 
@@ -65,29 +61,29 @@
 #         else:
 #             print("Invalid Input")
 
-data = {
-    "3947758475" : {
-        "name" : "Desmond",
-        "dob" : "09 - 09 - 89",
-        "bvn" : "123456789",
-        "pin" : "1234",
-        "bal":0
-    }
-}
+# data = {
+#     "3947758475" : {
+#         "name" : "Desmond",
+#         "dob" : "09 - 09 - 89",
+#         "bvn" : "123456789",
+#         "pin" : "1234",
+#         "bal":0
+#     }
+# }
 
-print('Welcome to the AstroBank App')
-print('Enter s to signup or l to login:')
-choice = input(">").lower()
+# print('Welcome to the AstroBank App')
+# print('Enter s to signup or l to login:')
+# choice = input(">").lower()
 
-if choice == "l":
-    acc_num = input("Enter your account num:\n>")
-    pin = input("Enter your pin\n>")
+# if choice == "l":
+#     acc_num = input("Enter your account num:\n>")
+#     pin = input("Enter your pin\n>")
 
-    #print(acc_num, " ", pin)
+#     #print(acc_num, " ", pin)
 
-    user = data.get(acc_num)  #Out is either NONE or the Value
+#     user = data.get(acc_num)  #Out is either NONE or the Value
 
-    if user and user['pin'] == pin:
-        print(f"Welcomme {user['name']}.\nYour account balance is ${user['bal']}")
-    else:
-        print("Invalid Login")
+#     if user and user['pin'] == pin:
+#         print(f"Welcomme {user['name']}.\nYour account balance is ${user['bal']}")
+#     else:
+#         print("Invalid Login")
